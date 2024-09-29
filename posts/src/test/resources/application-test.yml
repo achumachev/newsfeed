@@ -1,0 +1,9 @@
+management:
+  endpoint:
+    health:
+      show-details: never
+      show-components: never
+
+spring:
+  main:
+    banner-mode: off

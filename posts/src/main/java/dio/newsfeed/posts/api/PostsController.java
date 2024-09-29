@@ -17,7 +17,7 @@ public class PostsController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Post creaetPost(@RequestBody CreatePost createPost) {
+    public Post createPost(@RequestBody CreatePost createPost) {
         return postService.cretePost(createPost);
     }
 

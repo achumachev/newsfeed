@@ -10,3 +10,19 @@ spring:
     default-property-inclusion: non_null
   application:
     name: posts
+
+management:
+  endpoint:
+    health:
+      show-components: always
+      show-details: always
+  endpoints:
+    jmx:
+      exposure:
+        exclude: '*'
+    web:
+      exposure:
+        include:
+          - health
+          - info
+
